@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>BANI SALEH - KEMAHASISWAAN</title> 
+	<link rel="stylesheet"  href="../../css/themes/default/jquery.mobile-1.1.1.css" />  
+	<link rel="stylesheet" href="../../css/themes/themes/unila.min.css" />
+	<link rel="stylesheet" href="../../css/themes/default/jqm-docs.css"/>
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/jqm-docs.js"></script>
+	<script src="../../js/jquery.mobile-1.1.1.js"></script>
+	<script type="text/javascript" charset="utf-8" src="../../phonegap.js"></script>
+
+	<script>
+      	$(document).bind("mobileinit", function() {
+	      $.mobile.page.prototype.options.addBackBtn = true;
+	      $.mobile.defaultPageTransition = 'none';
+	      $.mobile.useFastClick  = true;
+	});
+      	</script>	
+
+    <style type="text/css" media="screen">
+		#kemahasiswaan {
+			background:#8d0303 url(../../css/themes/default/images/mainbg.png) repeat scroll top center;
+		}
+    </style>
+
+</head> 
+<body> 
+
+<div data-role="page" class="type-index" id="kemahasiswaan">
+
+	<div data-role="header" data-theme="a" data-position="fixed">
+		<h1>KEMAHASISWAAN</h1>
+		<a href="../../index.html" data-icon="home" data-iconpos="notext">HOME BANSAL</a>
+		<a href="../nav.html" data-icon="search" data-iconpos="notext" data-rel="dialog" data-transition="fade">PENCARIAN</a>
+	</div>
+	
+	<img src="img/ukmheader.jpg" width="100%"/>
+
+	<div data-role="content">
+		<div data-role="collapsible" data-theme="e" data-content-theme="c">
+			<h3>KEMAHASISWAAN </h3>
+<p>KEMAHASISWAAN Bani Saleh : Untuk memenuhi kebutuhan mahasiswa, yang mencakup kebutuhan untuk mengembangkan penalaran, minat (bakat dan kegemaran), informasi dan kesejahteraan, maka disediakan beberapa layanan yang disertai dengan pembinaan dan pengembangannya</p>
+			<p><strong>Bidang Minat, Bakat, dan Kegemaran :</strong> Pembinaan dan pengembangan kemahasiswaan bidang minat, bakat, dan
+kegemaran dilaksanakan dengan memberikan layanan ekstra kurikuler yang
+meliputi bidang olah raga, kesenian, dan minat atau kegemaran khusus, baik
+yang bersifat rutin maupun insidental. Kegiatan rutin dilaksanakan secara
+periodik dengan jadwal teratur, sedangkan yang bersifat insidental dilakukan
+secara tidak terjadwal dan disesuaikan dengan keadaan. 
+<div data-role="collapsible-set">
+			
+</div>
+</p>
+		</div>
+		<div class="ui-grid-a">
+			<div class="ui-block-a"><a href="bemdanukm.html" data-transition="none"><img src="img/UKM.jpg" width="100%"/></a></div>
+			<div class="ui-block-b"><a href="hmj.html" data-transition="none"><img src="img/HMJ.jpg" width="100%"/></a></div>
+		</div>
+	</div> 
+
+	<div data-role="footer" data-theme="a" data-position="fixed">
+		<img src="../../img/bordertapisdown.png" width="100%"/>
+	</div>
+
+</div>
+
+</body>
+</html>

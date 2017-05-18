@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BANSAL - GALERI</title>
+	<link rel="stylesheet"  href="../../css/themes/default/jquery.mobile-1.1.1.css" />
+	<link rel="stylesheet" href="../../css/themes/themes/unila.min.css" />
+	<link rel="stylesheet" href="../../css/themes/default/jqm-docs.css" />
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/jqm-docs.js"></script>
+	<script src="../../js/jquery.mobile-1.1.1.js"></script>
+	<script type="text/javascript" charset="utf-8" src="../../../phonegap.js"></script>	
+
+	<script>
+      	$(document).bind("mobileinit", function() {
+	      $.mobile.page.prototype.options.addBackBtn = true;
+	      $.mobile.defaultPageTransition = 'none';
+	      $.mobile.useFastClick  = true;
+	});
+    </script>
+	
+    <style>
+		#galeri {
+  			background:#333333 url(../../css/themes/default/images/mainbg.png) repeat scroll top center;
+		}
+    </style>
+
+</head>
+<body>
+
+<div data-role="page" id="galeri">
+
+	<div data-role="header" data-theme="a" data-position="fixed">
+		<h1>GALERI BANSAL</h1>
+		<a href="../../index.html" data-icon="home" data-iconpos="notext">HOME BANSAL</a>
+		<a href="../nav.html" data-icon="search" data-iconpos="notext" data-rel="dialog" data-transition="fade">PENCARIAN</a>
+	</div>
+
+	<div data-role="header" data-theme="d" > 
+		<img src="galerihead.jpg" width="100%  alt="GALERI UNILA">
+	</div>
+	
+	<div data-role="content"> 
+		<ul data-role="listview" data-theme="d" data-dividertheme="e" data-filter="true" data-filter-theme="d" data-filter-placeholder="Galeri..." data-split-icon="gear" data-split-theme="c">
+
+
+<img src="bansal/masjid1.jpg" width="100%" /><br/><br/>
+<img src="bansal/masjid2.jpg" width="100%" /><br/><br/>
+<img src="bansal/masjid3.jpg" width="100%" /><br/><br/>
+<img src="bansal/masjid4.jpg" width="100%" /><br/><br/>
+<img src="bansal/masjid5.jpg" width="100%" /><br/><br/>
+<img src="bansal/masjid6.jpg" width="100%" /><br/><br/>
+<img src="bansal/masjidthumb.jpg" width="100%" />
+			
+		</ul>
+	</div>
+	
+	<div data-role="footer" data-id="foo1" data-position="fixed">
+		<img src="../../img/bordertapis.png" width="100%"/>
+	</div>  
+
+</div><!-- /HALAMAN -->
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<!--
+	Nama Aplikasi	: MY CAMPUZ
+	Website			: - http://www.banisaleh.ac.id
+
+	Author			: Deni Supriyatna
+	E-Mail			: - denisupriyatna01@gmail.com
+
+	Ket				: Aplikasi Pengenalan STMIK Bani Saleh
+	-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>STMIK BANI SALEH</title>
+	<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.1.1.css" />
+	<link rel="stylesheet" href="css/themes/themes/unila.min.css" />
+	<link rel="stylesheet" href="css/themes/default/jqm-docs.css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jqm-docs.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.1.1.js"></script>
+	<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+
+	<!-- Script untuk mengontrol Back Bottom Android -->
+	<script>
+	document.addEventListener("deviceready", tmPageLoad, true);
+
+        function tmPageLoad(){
+                 document.addEventListener("backbutton", backKeyDown, true);
+        }
+
+        function backKeyDown() {
+		if($.mobile.activePage.is('#home')){
+
+			var _confirm = confirm("Apakah ingin keluar?");
+			if (_confirm){navigator.app.exitApp();}
+		}
+		else {
+			navigator.app.backHistory()
+		}
+		}
+    </script>
+	<!-- /Script untuk mengontrol Back Bottom Android -->
+
+	<!-- Script untuk menghandle Action Keseluruhan Halaman -->
+	<script>
+      	$(document).bind("mobileinit", function() {
+	      $.mobile.page.prototype.options.addBackBtn = true;
+	      $.mobile.defaultPageTransition = 'none';
+	      $.mobile.useFastClick  = true;
+	});
+    </script>
+	<!-- Script untuk menghandle Action Keseluruhan Halaman -->
+
+	<style>
+		#home {background:#333333 url(css/themes/default/images/mainbg.png) repeat scroll top center}
+    </style>
+
+</head>
+<body>
+
+<div data-role="page" class="type-home" id="home"><!-- Halaman -->
+
+	<div data-role="header" data-position="inline" data-theme="a">
+		<h1>BANI SALEH</h1>
+		<a href="bansal/bantuan/index.html" data-theme="e"  class="ui-btn-right" data-icon="info" data-iconpos="notext" data-transition="none">BANTUAN</a>
+	</div>
+
+	<div data-role="header" data-position="inline" data-theme="a">
+		<img src="img/main.jpg" width="100%"/>
+	</div><!-- /Main Picture -->
+
+	<div data-role="header" data-position="inline" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="bansal/civitas/index.html" data-transition="none" data-theme="f">CIVITAS</a></li>
+				<li><a href="bansal/galeri/index.html" data-transition="none" data-theme="f">GALERI</a></li>
+				<li><a href="bansal/kemahasiswaan/index.html" data-transition="none" data-theme="f">UKM/HMJ</a></li>
+			</ul>
+		</div>
+		<!--<div data-role="navbar">-->
+			<!--<ul>-->
+				<!--<li><a href="mailto:denisupriyatna01@gmail.com" data-transition="none" data-prefetch="true" data-theme="c">KONTAK</a></li>-->
+				<!--<li><a href="http://banisaleh.ac.id/banisaleh1/" data-transition="none" data-prefetch="true" data-theme="c">WEBSITE</a></li>-->
+			<!--</ul>-->
+		<!--</div>-->
+	</div>
+
+		<div class="ui-grid-a">
+           	<div class="ui-block-a">
+				<a data-role="button" data-icon="grid" data-iconpos="left" data-mini="false" data-direction="reverse" data-transition="none" data-theme="e" href="bansal/profil/profilumum/index.html">PROFIL</a>
+			</div>
+           	<div class="ui-block-b">
+				<a data-role="button" data-mini="false" data-direction="reverse" data-transition="none" data-theme="e" href="bansal/jurusan/index.html" data-icon="refresh" data-iconpos="right">JURUSAN</a>
+			</div>
+		</div>
+
+	<div data-role="footer" data-theme="e" data-id="foo1" data-position="fixed"></div>
+
+</div><!-- /Halaman -->
+
+</body>
+</html>

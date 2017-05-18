@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BANSAL - PROFIL - PROFIL UMUM</title>
+	<link rel="stylesheet"  href="../../../css/themes/default/jquery.mobile-1.1.1.css" />
+	<link rel="stylesheet" href="../../../css/themes/themes/unila.min.css" />
+	<link rel="stylesheet" href="../../../css/themes/default/jqm-docs.css" />
+	<script src="../../../js/jquery.js"></script>
+	<script src="../../../js/jqm-docs.js"></script>
+	<script src="../../../js/jquery.mobile-1.1.1.js"></script>
+	<script type="text/javascript" charset="utf-8" src="../../../phonegap.js"></script>
+
+	<script>
+      	$(document).bind("mobileinit", function() {
+	      $.mobile.page.prototype.options.addBackBtn = true;
+	      $.mobile.defaultPageTransition = 'none';
+	      $.mobile.useFastClick  = true;
+	});
+    </script>
+
+    <style>
+		#home {
+  			background:#333333 url(../../../css/themes/default/images/mainbg.png) repeat scroll top center;
+		}
+    </style>
+
+</head>
+<body>
+
+<div data-role="page" class="type-home"  id="home">
+
+	<div data-role="header" data-position="inline" data-theme="a">
+		<h1>PROFIL UMUM</h1>
+		<a href="../../../index.html" data-mini="true" data-direction="reverse" data-transition="none" data-theme="a" data-role="button" data-icon="arrow-l" data-iconpos="notext">PROFIL</a>
+		<a href="../../../index.html" data-mini="true" data-direction="reverse" data-transition="none" data-theme="a" data-role="button" data-icon="home" data-iconpos="notext">Bansal</a>
+	</div>
+
+	<div data-role="header" data-position="inline" data-theme="a">
+		<img src="main.jpg" width="100%"/>
+	</div>
+
+	<div data-role="header" data-position="inline" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="sejarah.html" data-transition="none" data-theme="f">SEJARAH</a></li>
+				<li><a href="visimisi.html" data-transition="none" data-theme="f">VISI & MISI</a></li>
+			</ul>
+		</div>
+		<div data-role="navbar">
+			<ul>
+        <li><a href="lambang.html" data-transition="none" data-prefetch="true" data-theme="c">LAMBANG</a></li>
+				<li><a href="tujuan.html" data-transition="none" data-prefetch="true" data-theme="c">TUJUAN</a></li>
+			</ul>
+		</div>
+	</div>
+		<div class="ui-grid-a">
+           	<div class="ui-block-a">
+				<a data-role="button" data-icon="grid" data-iconpos="left" data-mini="false" data-direction="reverse" data-transition="none" data-theme="e" href="kontak.html">KONTAK</a>
+			</div>
+           	<div class="ui-block-b">
+				<a data-role="button" data-mini="false" data-direction="reverse" data-transition="none" data-theme="e" href="lokasi.html" data-icon="grid" data-iconpos="right">LOKASI</a>
+			</div>
+		</div>
+
+	<div data-role="footer" data-theme="e" data-position="fixed"></div>
+
+</div><!-- /HALAMAN -->
+
+</body>
+</html>
